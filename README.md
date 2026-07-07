@@ -1,1 +1,1 @@
-# offwhite555-cyber.github.io
+# Mr Beast.github.io
