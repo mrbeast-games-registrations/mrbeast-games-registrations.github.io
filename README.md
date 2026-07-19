@@ -1,1 +1,1 @@
-# mrbeast-cyber.github.io
+# mrbeast-games.github.io
