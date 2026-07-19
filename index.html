@@ -4,11 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Beast Games</title>
-    <style>"iframe {
-  width: 100%;
-  height: auto;
-  aspect-ratio: 16 / 9;
-}
+    <style>
+        iframe {
+            width: 100%;
+            max-width: 640px; /* Optional: Prevents the video from becoming overly large on massive desktop monitors */
+            height: auto;
+            aspect-ratio: 16 / 9;
+            border: none;
+            margin-bottom: 30px; /* Adds clean spacing below the video */
+        }
         body, html {
             margin: 0;
             padding: 0;
@@ -17,9 +21,8 @@
             color: white;
             text-align: center;
         }
-
         .bg {
-            background-image: url(1784156206357.jpg); /* Replace with your image URL */
+            background-image: url("1784156206357.jpg"); /* Quotes added around standard file name strings */
             height: 100%;
             background-position: center;
             background-repeat: no-repeat;
@@ -42,6 +45,8 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            padding: 20px; /* Prevents visual items from overflowing screen boundaries on mobile devices */
+            box-sizing: border-box;
         }
 
         h1 {
@@ -84,7 +89,11 @@
         <div class="overlay">
             <h1>The Beast Games</h1>
             <h2>Register now</h2>
-     <div class="social-icons">
+            
+            <!-- Video sits neatly below your textual call-to-actions -->
+            <iframe src="https://www.youtube.com/embed/SI3CrHUAGqM?si=KagWqsNpavtg9gbS" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            
+            <div class="social-icons">
                 <a href="https://twitter.com/MrBeast" target="_blank">X</a>
                 <a href="https://facebook.com/MrBeast" target="_blank">F</a>
                 <a href="https://instagram.com/MrBeast" target="_blank">I</a>
