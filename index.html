@@ -1,72 +1,92 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Beast Games - Registration</title>
+    <title>The Beast Games</title>
     <style>
-        body {
-            background-color: #000000;
-            color: #ffffff;
-            font-family: Arial, sans-serif;
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: 'Arial', sans-serif;
+            color: white;
+            text-align: center;
+        }
+
+        .bg {
+            background-image: url(1784156299234.jpg); /* Replace with your image URL */
+            height: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
-            height: 100vh;
-            margin: 0;
+            position: relative;
         }
-        .container {
-            background-color: #1a1a1a;
-            padding: 40px;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-            width: 300px;
-            text-align: center;
-            border: 2px solid #0056b3;
+
+        .overlay {
+            background-color: rgba(0, 0, 0, 0.5); /* Dark overlay for readability */
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
         }
+
         h1 {
-            color: #007bff;
-            margin-bottom: 20px;
+            font-size: 3rem;
+            margin-bottom: 10px;
         }
-        .logo {
-            width: 100px;
-            margin-bottom: 15px;
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 30px;
         }
-        input[type="email"], input[type="password"] {
-            width: 100%;
-            padding: 10px;
-            margin: 10px 0;
-            border: 1px solid #333;
+
+        .register-btn {
+            background-color: transparent;
+            border: 2px solid #0056b3;
+            color: #ffffff;
+            padding: 15px 40px;
+            font-size: 1.5rem;
+            text-decoration: none;
             border-radius: 5px;
-            background-color: #222;
-            color: white;
-            box-sizing: border-box;
-        }
-        button {
-            width: 100%;
-            padding: 12px;
-            background-color: #007bff;
-            border: none;
-            border-radius: 5px;
-            color: white;
-            font-size: 16px;
-            cursor: pointer;
             transition: background-color 0.3s;
+            margin-bottom: 50px;
+            display: inline-block;
         }
-        button:hover {
+
+        .register-btn:hover {
             background-color: #0056b3;
+        }
+
+        .social-icons a {
+            margin: 0 15px;
+            color: white;
+            font-size: 2rem;
+            text-decoration: none;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>The Beast Games</h1>
-        <form>
-            <input type="email" placeholder="Email Address" required>
-            <input type="password" placeholder="Password" required>
-            <button type="submit">Register</button>
-        </form>
+    <div class="bg">
+        <div class="overlay">
+            <h1>The Beast Games</h1>
+            <h2>Register now</h2>
+            <a href="mailto:dommaybe6@gmail.com" class="register-btn">Register</a>
+            <div class="social-icons">
+                <a href="https://twitter.com/MrBeast" target="_blank">X</a>
+                <a href="https://facebook.com/MrBeast" target="_blank">F</a>
+                <a href="https://instagram.com/MrBeast" target="_blank">I</a>
+            </div>
+        </div>
     </div>
 </body>
 </html>
