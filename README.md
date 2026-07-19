@@ -1,1 +1,1 @@
-# mrbeast-games.github.io
+# mrbeast-games-registrations.github.io
